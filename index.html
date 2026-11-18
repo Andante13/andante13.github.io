@@ -97,4 +97,273 @@ h2{
 }
 
 .skill{
-    margin-bottom:20
+    margin-bottom:20px;
+}
+
+.skill-bar{
+    width:100%;
+    height:20px;
+    background:#ddd;
+    border-radius:20px;
+}
+
+.skill-fill{
+    height:20px;
+    background:#0d6efd;
+    border-radius:20px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.dark .project{
+    background:#1f1f1f;
+}
+
+.button{
+    display:inline-block;
+    background:#0d6efd;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+.dark-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    border:none;
+    background:#0d6efd;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#0d6efd;
+    color:white;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:36px;
+}
+
+nav{
+    flex-wrap:wrap;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+
+<h1>Pedro Jr. L. Suyu</h1>
+
+<p>Analytics EIS/MIS Lead</p>
+
+<p>
+Oracle SQL • Data Warehousing • Power Automate • Reporting & Analytics
+</p>
+
+</section>
+
+<div class="container">
+
+<section id="about" class="section">
+
+<div class="card">
+
+<h2>About Me</h2>
+
+<p>
+Experienced Analytics and MIS Lead with expertise in Data Warehousing,
+Oracle SQL, ETL Development, Process Automation,
+Business Intelligence, and Enterprise Reporting.
+Passionate about transforming business data into actionable insights
+and automating manual processes.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills" class="section">
+
+<div class="card">
+
+<h2>Technical Skills</h2>
+
+<div class="skill">
+<p>Oracle SQL - 95%</p>
+<div class="skill-bar">
+<div class="skill-fill" style="width:95%"></div>
+</div>
+</div>
+
+<div class="skill">
+<p>PL/SQL - 90%</p>
+<div class="skill-bar">
+<div class="skill-fill" style="width:90%"></div>
+</div>
+</div>
+
+<div class="skill">
+<p>Power Automate - 85%</p>
+<div class="skill-bar">
+<div class="skill-fill" style="width:85%"></div>
+</div>
+</div>
+
+<div class="skill">
+<p>Data Warehousing - 92%</p>
+<div class="skill-bar">
+<div class="skill-fill" style="width:92%"></div>
+</div>
+</div>
+
+<div class="skill">
+<p>Reporting & Analytics - 95%</p>
+<div class="skill-bar">
+<div class="skill-fill" style="width:95%"></div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="experience" class="section">
+
+<div class="card">
+
+<h2>Experience</h2>
+
+<h3>Indra Philippines, Inc.</h3>
+
+<p>
+IOM Shared Services Analytics EIS/MIS Lead
+</p>
+
+<br>
+
+<ul>
+<li>Lead enterprise analytics initiatives.</li>
+<li>Develop and support Oracle SQL solutions.</li>
+<li>Manage reporting and automation projects.</li>
+<li>Design data warehouse and ETL processes.</li>
+<li>Support business intelligence requirements.</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="projects" class="section">
+
+<h2>Featured Projects</h2>
+
+<div class="project-grid">
+
+<div class="project">
+<h3>Power Automate Notifications</h3>
+<p>
+Built automated email and adaptive card solutions
+to enhance monitoring and notifications.
+</p>
+</div>
+
+<div class="project">
+<h3>Enterprise Reporting</h3>
+<p>
+Developed Oracle SQL reporting solutions for
+operational and management reporting.
+</p>
+</div>
+
+<div class="project">
+<h3>Data Warehouse Solutions</h3>
+<p>
+Supported ETL, data integration and warehouse initiatives
+for business analytics.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="section">
+
+<div class="card">
+
+<h2>Contact</h2>
+
+<p>Email: your.email@email.com</p>
+
+<p>LinkedIn: Add your LinkedIn URL</p>
+
+<a href="#" class="button">
+Download Resume
+</a>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 Pedro Jr. L. Suyu
+</p>
+
+</footer>
+
+<button class="dark-btn" onclick="toggleDarkMode()">
+🌙
+</button>
+
+<script>
+
+function toggleDarkMode(){
+
+document.body.classList.toggle('dark');
+
+}
+
+</script>
+
+</body>
+</html>
